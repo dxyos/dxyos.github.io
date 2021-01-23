@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>dxyos</title>
+    </head>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: #eeeeee;
+        }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dxyos</title>
-</head>
-<style>
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: #eeeeee;
-    }
+        .title {
+            position: absolute;
+            left: 8%;
+            top: 3%;
+            color: #aaa;
+        }
 
-    .title {
-        position: absolute;
-        left: 8%;
-        top: 3%;
-        color: #aaa;
-    }
+        .context {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
 
-    .context {
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -50%);
-    }
+        .name {
+            font-size: 30px;
+            color: #333333;
+        }
 
-    .name {
-        font-size: 30px;
-        color: #333333;
-    }
+        .honorific1 {
+            color: #aaaaaa;
+        }
 
-    .honorific1 {
-        color: #aaaaaa;
-    }
+        .honorific2 {
+            color: #dddddd;
+        }
+        .footer {
+            height: 64px;
+            line-height: 64px;
+            width: 1200px;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .button {
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #a9a9b3;
+            cursor: pointer;
+        }
+    </style>
 
-    .honorific2 {
-        color: #dddddd;
-    }
-</style>
-
-<body>
-    <span class="title">www.dxyos.org</span>
-    <div class="context">
-        <span class="name">dxyOS</span>
-        <br>
-        <span class="honorific1">精彩呈现 ...</span>
-        <br>
-        <span class="honorific2">敬请期待 ...</span>
-    </div>
-</body>
-
+    <body>
+        <span class="title">www.dxyos.org</span>
+        <div class="context">
+            <span class="name">dxyOS</span>
+            <br />
+            <span class="honorific1">精彩呈现 ...</span>
+            <br />
+            <span class="honorific2">敬请期待 ...</span>
+        </div>
+        <footer class="footer">
+            <a class="button" target="_blank" href="https://beian.miit.gov.cn"> 京ICP备20008433号-1 </a>
+        </footer>
+    </body>
 </html>
